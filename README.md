@@ -2,12 +2,13 @@
 
 Hi.
 
-This script works like this: you select your heroku applications that have Logentries addon with default alert settings.
+This script works like this: you prepare a list of your heroku applications that have Logentries addon with default alert settings.
 
 If you think that these applications should send less emails (that is when you have other monitoring means and only want to know when application is actually went down) then run:
 
 ```
-git clone <this-repo>
+git clone https://github.com/altV/logentries-less-heroku-spam-noise
+cd logentries-less-heroku-spam-noise
 gem install bundler
 bundle
 ./go.rb app-name-1 app-name-2 app-name-3
